@@ -1,0 +1,13 @@
+rootProject.name = 'fittin_app'
+include ':react-native-full-battery-status'
+project(':react-native-full-battery-status').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-full-battery-status/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+
+// Google maps
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
+
+include ':react-native-full-battery-status'
+project(':react-native-full-battery-status').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-full-battery-status/android')
